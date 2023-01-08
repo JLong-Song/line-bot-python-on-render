@@ -3,8 +3,8 @@ services:
   name: JinDa_Password
   env: python
   repo: https://github.com/JLong-Song/Linebot_Password_Decode.git
-  buildCommand: cd examples/flask-echo;pip install gunicorn -r requirements.txt
-  startCommand: cd examples/flask-echo;gunicorn app:app
+  buildCommand: pip install gunicorn -r requirements.txt
+  startCommand: gunicorn app:app
   plan: free
   autoDeploy: false
   envVars:
